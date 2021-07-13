@@ -117,7 +117,7 @@ header{
  .highlights .details{
    width: 466px;
    height: 309px;
-  margin-right: 70px;
+   margin-right: 70px;
  }
  .highlights .details .title{
    font-size: 48px;
@@ -190,7 +190,8 @@ header{
   display: block;
   font-size: 20px;
   margin: 5px 0px;
-  color: #E02C6D;;
+  color: #E02C6D;
+  padding-left: 10px;
 }
 .input-name{
   padding: 10px;
@@ -198,7 +199,7 @@ header{
 .submit{
   border: none;
   display: inline-block;
-  margin-left: 60px;
+  margin-left: 120px;
   margin-top: 25px;
   margin-bottom: 25px;
   background-color: #E02C6D;
@@ -208,30 +209,117 @@ header{
 }
 
  /* footer style */
- footer{
-   margin-top: 100px;
+ .logo{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
  }
- footer .logo{
-   display: flex;
-   justify-content: center;
-   margin-bottom: 20px;
- }
- footer .logo img{
-   width: 483px;
-   height: 110px;
- }
- footer .social-media{
-   display: flex;
-   justify-content: center;
-   margin-bottom: 20px;
- }
+ .logo img{
+  width: 483px;
+  height: 110px;
+}
+.social-media{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.social-media a{
+  margin: 0px 14px;
+}
+p{
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+}
 
- .fab{
-   margin-right: 25px;
- }
- footer .copyright{
-   display: flex;
-   justify-content: center;
-   font-size: 18px;
- }
+
+ /* responsiveness  */
+ @media screen and (max-width: 688px) {
+
+  /* common style  */
+  .colored-text{
+    font-size: 30px;
+  }
+
+  /* header style  */
+   header{
+     flex-direction: column;
+   }
+   .header-title{
+     font-size: 36px;
+   }
+   .header-image img{
+    width: 329px;
+    height: 260px;
+  }
+
+  /* players style  */
+
+  .players{
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 24px;
+    margin-top: 47px;
+  }
+  
  
+  /* highlights section style  */
+  .highlights{
+    flex-direction: column;
+    margin-top: 60px;
+    padding-left: 15px;
+  }
+  .highlights .details{
+    width: 329px;
+    height: 299px;
+   margin-right: 70px;
+   margin-bottom: 70px;
+  }
+  .highlights .details .title{
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+
+  .highlights .image img{
+    width: 328px;
+    height: 248px;
+  }
+
+
+  /* award section style  */
+  .award{
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .box{
+    width: 328px;
+    height: 248px;
+    position: relative;
+    margin-right: 15px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .award .image img{
+    width: 328px;
+    height: 248px;
+  }
+  .award .title{
+    font-size: 24px;
+    text-align: center;
+  }
+  .award .info{
+    font-size: 16px;
+  }
+
+  /* footer style  */
+  .logo{
+    margin-top: 40px;
+  }
+  .logo img{
+    width: 286px;
+    height: 63px;
+  }
+  
+  
+
+ }
