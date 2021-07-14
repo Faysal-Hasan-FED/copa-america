@@ -249,7 +249,7 @@ p{
     height: 260px;
   }
   .header-image:hover{
-    transform: scale(0.8);
+    transform: scale(1.5);
     transition: transform 3s;
   }
 
