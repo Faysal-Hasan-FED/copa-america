@@ -1,11 +1,7 @@
-/* ---------------------------------------
-  fonts 
- ----------------------- */
+/* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-/* --------------------------------------------
-common styles
- ---------------------  */
+/* common styles  */
 body{
   font-family: 'Poppins', sans-serif;
 }
@@ -21,9 +17,7 @@ main{
 }
 
 
-/* ------------------------------------------------
-  header style start
- --------------------------------------   */
+/* header style start */
 header{
   display: flex;
   justify-content: space-evenly;
@@ -71,13 +65,9 @@ header{
   transition: transform 3s;
 }
 
-/*------------------------
- header style end
---------------------------  */
+/*header style end */
 
-/*------------------------
- players style start 
- --------------------*/
+/* players style start */
  
  .players{
    display: grid;
@@ -114,7 +104,7 @@ header{
    text-align: left;
  }
 
- /* highlights style  */
+ /* highlights section style  */
  .highlights{
    display: flex;
    justify-content: center;
@@ -141,7 +131,7 @@ header{
  }
 
 
- /* award style  */
+ /* award section style  */
  .award{
    display: flex;
    justify-content: center;
@@ -179,7 +169,7 @@ header{
    font-size: 22px;
  }
 
- /* form style  */
+ /* vote section style  */
 
 .vote-detail{
   text-align: center;
@@ -239,7 +229,7 @@ p{
 }
 
 
- /* responsiveness  */
+ /* responsiveness for mobile  */
  @media screen and (max-width: 688px) {
 
   /* common style  */
@@ -330,6 +320,8 @@ p{
     width: 286px;
     height: 63px;
   }
+
+  /* The End  */
   
   
 
